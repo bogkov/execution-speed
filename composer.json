@@ -1,0 +1,33 @@
+{
+    "name": "bogkov/execution-speed",
+    "description": "This component provides the functionality to calculate the execution speed",
+    "keywords": [
+        "task speed",
+        "execution speed",
+        "speed calculate"
+    ],
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bogdan Koval",
+            "email": "scorpioninua@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bogkov\\ExecutionSpeed\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bogkov\\ExecutionSpeedTests\\": "tests/"
+        }
+    }
+}
