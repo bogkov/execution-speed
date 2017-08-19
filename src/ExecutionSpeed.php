@@ -82,7 +82,6 @@ class ExecutionSpeed
 
         foreach ($this->stack as $index => $item) {
             $value = key($item) / current($item);
-            $a[] = $value;
             $coefficient = $coefficients[$index];
 
             if (null !== $result) {
@@ -106,7 +105,10 @@ class ExecutionSpeed
     protected function getCoefficients(float $coefficient): array
     {
         $value = 1;
-        $coefficients[] = $value;
+
+        $coefficients = [
+            $value,
+        ];
 
         $max = $this->max;
         while (--$max > 0) {
