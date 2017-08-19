@@ -26,5 +26,5 @@ $executionSpeed->push($count = 100, $duration = 10);
 $executionSpeed->push($count = 120, $duration = 11);
 $executionSpeed->push($count = 90, $duration = 8);
 
-echo 'Speed: ' . $executionSpeed->getSpeed($coefficient = 0.3, $precision = 0);
+echo 'Speed: ' . $executionSpeed->getSpeed($coefficient = 0.3, $precision = 2); // Speed: 10.85
 ```
